@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstract\Math\**" />
+    <Compile Remove="Concrete\Math\**" />
+    <Compile Remove="DTO\Math\**" />
+    <EmbeddedResource Remove="Abstract\Math\**" />
+    <EmbeddedResource Remove="Concrete\Math\**" />
+    <EmbeddedResource Remove="DTO\Math\**" />
+    <None Remove="Abstract\Math\**" />
+    <None Remove="Concrete\Math\**" />
+    <None Remove="DTO\Math\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\demoApi.Infrastracture\demoApi.Infrastracture.csproj" />
+  </ItemGroup>
+
+</Project>
